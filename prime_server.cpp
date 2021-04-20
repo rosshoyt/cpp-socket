@@ -114,7 +114,8 @@ int main(int argc, char const *argv[])
     // Set signal settings (NEW)
     signal(SIGPIPE, &sigpipe_handler);
     // Socket vars
-    int server_fd, new_socket;
+    int server_fd;
+    long new_socket;
     struct sockaddr_in address;
     int addrlen = sizeof(address);
     // Create socket
